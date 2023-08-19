@@ -5,6 +5,7 @@ import {
     Image,
     View
 } from 'react-native';
+import Button from "../../../components/Button";
 
 const Splash = () => {
     return(
@@ -13,6 +14,8 @@ const Splash = () => {
             <Text style={styles.title}>You'll Find</Text>
             <Text style={[styles.innerTitle, styles.title]}>All you need</Text>
             <Text style={styles.title}>Here!</Text>
+
+            <Button title='Sign up'/>
         </View>
        
         
