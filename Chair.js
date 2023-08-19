@@ -22,6 +22,9 @@ const {theme} = props; // Syntax Object Destructuring = props.theme = {theme} = 
     }
 
     return (
+        /**
+         * When we depend a state we out style like this
+         */
         <Text style={{ fontSize: isBig ? 24 : 14, color: theme === 'dark' ? 'grey' : 'pink'}} onPress={changeState}> This is Chair</Text>
     )
 }

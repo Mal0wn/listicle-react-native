@@ -21,7 +21,7 @@ const App = () => {
 
   return (
     <SafeAreaView>
-      <Text style={{margin: 16, fontSize : 16}} onPress={()=> setTheme('dark')}>Make Theme Dark</Text>
+      <Text style={styles.themeHeader} onPress={()=> setTheme('dark')}>Make Theme Dark</Text>
       <View>
         <Chair theme={theme}/>
         <Table/>
@@ -31,8 +31,13 @@ const App = () => {
   );
 }
 
+
+/**
+ *  When we not depend a state we put style in a object style and we called them in a components with this syntax : 
+ * style={styles.nameOfProperty}
+ */
 const styles = StyleSheet.create({
-  
+  themeHeader : {margin: 16, fontSize : 16},
 });
 
 export default App;
