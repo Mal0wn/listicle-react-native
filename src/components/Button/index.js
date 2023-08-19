@@ -7,9 +7,9 @@ const Button = ({title}) => {
         console.log('Button Pressed');
     }
  return(
-    <Pressable hitSlop={24} onPress={handlePress} style={styles.container}>
+    <TouchableOpacity activeOpacity={0.6} onPress={handlePress} style={styles.container}>
         <Text style={styles.title}>{title}</Text>
-    </Pressable>
+    </TouchableOpacity>
  )
 }
 
