@@ -5,21 +5,25 @@
  * @format
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   StyleSheet,
   View,
-  SafeAreaView
+  SafeAreaView, 
+  Text
 } from 'react-native';
 import Chair from './Chair';
 import Table from './Table';
 
-function App() {
+const App = () => {
+
+  const [theme, setTheme] = useState('light')
 
   return (
     <SafeAreaView>
+      <Text style={{margin: 16, fontSize : 16}} onPress={()=> setTheme('dark')}>Make Theme Dark</Text>
       <View>
-        <Chair/>
+        <Chair theme={theme}/>
         <Table/>
       </View>
     </SafeAreaView>
