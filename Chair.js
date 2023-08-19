@@ -3,8 +3,9 @@ import {
     Text
 } from 'react-native';
 
-const Chair = () => {
+const Chair = (props) => {
 
+const {theme} = props; // Syntax Object Destructuring = props.theme = {theme} = props 
     const [isBig , setIsBig] = useState(false)
 
     /**
@@ -21,7 +22,7 @@ const Chair = () => {
     }
 
     return (
-        <Text style={{ fontSize: isBig ? 24 : 14}} onPress={changeState}> This is Chair</Text>
+        <Text style={{ fontSize: isBig ? 24 : 14, color: theme === 'dark' ? 'grey' : 'pink'}} onPress={changeState}> This is Chair</Text>
     )
 }
 
