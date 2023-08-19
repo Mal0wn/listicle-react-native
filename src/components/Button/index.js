@@ -7,7 +7,7 @@ const Button = ({title}) => {
         console.log('Button Pressed');
     }
  return(
-    <Pressable onPress={handlePress} style={styles.container}>
+    <Pressable hitSlop={24} onPress={handlePress} style={styles.container}>
         <Text style={styles.title}>{title}</Text>
     </Pressable>
  )
