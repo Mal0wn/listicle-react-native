@@ -5,5 +5,16 @@ export const styles = StyleSheet.create({
     container: {
        padding : 24
     },
+    agreeRow : {
+        flexDirection : 'row',
+        alignItems : 'center'
+    },
+    label : {
+        color : colors.blue,
+        marginHorizontal : 15
+    },
+    labelBold: {
+        fontWeight:'bold'
+    }
    
 })
