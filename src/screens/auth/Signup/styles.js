@@ -15,6 +15,9 @@ export const styles = StyleSheet.create({
     },
     labelBold: {
         fontWeight:'bold'
+    },
+    button : {
+        marginVertical : 20
     }
    
 })

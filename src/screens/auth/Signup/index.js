@@ -7,6 +7,7 @@ import {
 import AuthHeader from "../../../components/AuthHeader";
 import Input from "../../../components/Input";
 import Checkbox from "../../../components/Checkbox";
+import Button from "../../../components/Button";
 
 const SignUp = () => {
 
@@ -24,6 +25,7 @@ const SignUp = () => {
            <Checkbox checked={checked} onCheck={setChecked} />
            <Text style={styles.label}>I agree with <Text style={[styles.label, styles.labelBold]}>Terms</Text> & <Text style={[styles.label, styles.labelBold]}>Privacy</Text>.</Text>
            </View>
+           <Button style={styles.button} title='Sign up'/>
            
         </View>
     )
