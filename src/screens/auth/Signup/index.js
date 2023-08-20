@@ -8,6 +8,7 @@ import AuthHeader from "../../../components/AuthHeader";
 import Input from "../../../components/Input";
 import Checkbox from "../../../components/Checkbox";
 import Button from "../../../components/Button";
+import Separator from "../../../components/Separator";
 
 const SignUp = () => {
 
@@ -26,6 +27,7 @@ const SignUp = () => {
            <Text style={styles.label}>I agree with <Text style={[styles.label, styles.labelBold]}>Terms</Text> & <Text style={[styles.label, styles.labelBold]}>Privacy</Text>.</Text>
            </View>
            <Button style={styles.button} title='Sign up'/>
+           <Separator text='Or sign up with'/>
            
         </View>
     )
